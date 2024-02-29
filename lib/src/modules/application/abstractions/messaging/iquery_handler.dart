@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 
-import '../../domain/shared/failure.dart';
+import '../../../domain/shared/failure.dart';
 import 'iquery.dart';
 
 abstract class IQueryHandler<TQuery extends IQuery<TResponse>, TResponse> {
