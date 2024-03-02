@@ -1,7 +1,5 @@
 import 'package:blog/src/modules/domain/features/auth/failures/auth_failures.dart';
 import 'package:blog/src/modules/domain/features/auth/failures/registro_failures.dart';
-import 'package:blog/src/modules/domain/features/auth/iauth_repository.dart';
-import 'package:blog/src/modules/domain/features/auth/models/usuario.dart';
 import 'package:blog/src/modules/domain/features/auth/models/value_object/password.dart';
 import 'package:blog/src/modules/domain/features/auth/models/value_object/username.dart';
 import 'package:blog/src/modules/domain/shared/extensions/dartz_extensions.dart';
@@ -11,9 +9,8 @@ import 'package:dartz/dartz.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-class MockUsuariosRepository extends Mock implements IUsuariosRepository {}
-
-class MockUser extends Mock implements Usuario {}
+import '../../../../domain/features/auth/mock/mock_usuario.dart';
+import '../../../../domain/features/auth/mock/mock_usuarios_repository.dart';
 
 void main() {
   late MockUsuariosRepository mockUsuariosRepository;

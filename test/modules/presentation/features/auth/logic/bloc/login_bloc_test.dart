@@ -1,14 +1,13 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:blog/src/modules/domain/features/auth/failures/auth_failures.dart';
 import 'package:blog/src/modules/application/features/auth/commands/login/login_command_handler.dart';
 import 'package:blog/src/modules/domain/features/auth/failures/login_failures.dart';
-import 'package:blog/src/modules/presentation/features/auth/logic/bloc/auth/auth_bloc.dart';
 import 'package:blog/src/modules/presentation/features/auth/logic/bloc/login/login_bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import '../../../../../application/features/auth/commands/registro_command_test.dart';
+import '../../../../../domain/features/auth/mock/mock_usuario.dart';
+import '../../../../../domain/features/auth/mock/mock_usuarios_repository.dart';
 
 void main() {
   group("LoginBloc", () {

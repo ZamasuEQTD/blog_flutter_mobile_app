@@ -1,5 +1,4 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:blog/src/modules/domain/features/auth/failures/auth_failures.dart';
 import 'package:blog/src/modules/domain/features/auth/failures/registro_failures.dart';
 import 'package:blog/src/modules/domain/features/auth/models/value_object/password.dart';
 import 'package:blog/src/modules/domain/features/auth/models/value_object/username.dart';
@@ -10,7 +9,8 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import '../../../../../application/features/auth/commands/login_command_test.dart';
+import '../../../../../domain/features/auth/mock/mock_usuario.dart';
+import '../../../../../domain/features/auth/mock/mock_usuarios_repository.dart';
 
 void main() {
   group("RegistroBloc", () {

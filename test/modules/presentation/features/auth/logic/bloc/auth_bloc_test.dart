@@ -4,7 +4,7 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class MockUser extends Mock implements Usuario {}
+import '../../../../../domain/features/auth/mock/mock_usuario.dart';
 
 void main() {
   group("AuthBloc", () {
