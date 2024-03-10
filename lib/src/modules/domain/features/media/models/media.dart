@@ -4,12 +4,16 @@ abstract class Media {
   const Media({required this.path});
 }
 
-abstract class ArchivoLocal extends Media {
-  final String extension;
-  final String nombreDeArchivo;
+class Video extends Media {
+  const Video({required super.path});
+}
 
-  const ArchivoLocal(
-      {required super.path,
-      required this.extension,
-      required this.nombreDeArchivo});
+class Imagen extends Media {
+  const Imagen({required super.path});
+}
+
+class ArchivoLocal {
+  final Media media;
+
+  ArchivoLocal(this.media);
 }

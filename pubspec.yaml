@@ -37,6 +37,10 @@ dependencies:
   dartz: ^0.10.1
   equatable: ^2.0.5
   flutter_bloc: ^8.1.4
+  dio: ^5.4.1
+  get_it: ^7.6.7
+  flutter_secure_storage: ^9.0.0
+  jwt_decoder: ^2.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

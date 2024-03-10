@@ -1,5 +1,15 @@
 class Usuario {
+  final String id;
   final String userName;
+  final RangoDeUsuario rango;
 
-  Usuario({required this.userName});
+  bool get esModerador => rango == RangoDeUsuario.moderador;
+
+  Usuario({required this.id, required this.userName, required this.rango});
+}
+
+
+enum RangoDeUsuario {
+  usuario,
+  moderador
 }

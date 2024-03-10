@@ -10,7 +10,7 @@ sealed class SeleccionDeMediaState extends Equatable {
 final class SinMediaSeleccionadaState extends SeleccionDeMediaState {}
 
 final class MediaSeleccionadaState extends SeleccionDeMediaState {
-  final Media media;
+  final ArchivoLocal media;
   const MediaSeleccionadaState(this.media);
 }
 

@@ -6,7 +6,7 @@ import 'package:dartz/dartz.dart';
 
 import '../../../../../domain/features/media/models/media.dart';
 
-class GetMediaQueryHandler extends IQueryHandler<GetMediaQuery, Media?> {
+class GetMediaQueryHandler extends IQueryHandler<GetMediaQuery, ArchivoLocal?> {
   final IMediaRepository _mediaRepository;
 
   const GetMediaQueryHandler(this._mediaRepository);
